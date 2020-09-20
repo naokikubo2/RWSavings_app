@@ -1,3 +1,8 @@
 <h1>Homes#top</h1>
 <p>Find me in app/views/homes/top.html.erb</p>
 <%= link_to "ログインする", '/login', class: 'btn btn-default' %>
+<% if current_user.nil? %>
+  <p>ログインしていません</p>
+<% else %>
+  <p>ログイン中です</p>
+<% end%>

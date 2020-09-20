@@ -1,4 +1,14 @@
 class SessionsController < ApplicationController
-  def new
+  def new; end
+
+  def create
+    @user = User.find_by(email: params[:session][:email].downcase)
+    if @user&.authenticate(params[:session][:password])
+      log_in(@user)
+      @current_user = @user
+      redirect_to '/'
+    else
+      redirect_to 'login'
+    end
   end
 end
