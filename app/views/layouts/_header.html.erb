@@ -11,16 +11,28 @@
             <a class="nav-link" href='#'>Home</a>
           </li>
           <% if logged_in? %>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>貯金する</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>貯金額を見る</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>在宅で不要になった行動を登録</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>プロフィールを編集</a>
+            </li>
           <% else%>
-          <li class="nav-item list-unstyled">
-            <a class="nav-link" href='#'>在宅貯金appの特徴と便利な使い方</a>
-          </li>
-          <li class="nav-item list-unstyled">
-            <a class="nav-link" href='#'>会員登録</a>
-          </li>
-          <li class="nav-item list-unstyled">
-            <a class="nav-link" href='#'>ログイン</a>
-          </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>在宅貯金appの特徴と便利な使い方</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>会員登録</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link" href='#'>ログイン</a>
+            </li>
           <% end %>
         </ul>
       </div>
